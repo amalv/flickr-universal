@@ -1,0 +1,88 @@
+@keyframes :global(fadeIn) {
+	0% { }
+	100% { opacity: 1; }
+}
+
+:global(body) {
+  background: #F3F5F6;
+}
+
+.normal {
+  margin: 30px;
+}
+
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.header {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+.item {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  background-size: contain;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(255,255,255, 0.5);
+  transition: opacity 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item:hover .info {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgba(0,0,0, 0.5);
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background: rgba(0,0,0, 0.1);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
