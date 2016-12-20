@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
-import routes from '../routes';
+import routes from '../Routes';
 import { store } from './Store';
 
 export default class AppRoutes extends React.Component {
